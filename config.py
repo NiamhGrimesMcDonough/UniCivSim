@@ -6,3 +6,5 @@ PlanetsThatDevelopIntelligentLife = 0
 CivlizationsThatReleaseSignals = 0
 LifetimeOfCibilizations = 0
 universeDiameterLightSeconds=473040000000
+MinStar = 100
+MaxStar = 500

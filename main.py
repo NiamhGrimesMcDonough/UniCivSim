@@ -1,19 +1,29 @@
-import tkinter as tk
-from tkinter import *
+import pygame
 from Galaxy import GenerateStars
 import random as rn
+import config
 
-canvas_width = 500
-canvas_height = 500
 
-master = Tk()
-master.title("Points")
-w = Canvas(master,
-    width=canvas_width,
-    height=canvas_height,
-    bg="black")
-w.pack(expand=YES, fill=BOTH)
-master.after(100, lambda: GenerateStars(w, rn.randrange(100000000000, 400000000000)))
-mainloop()
+
+pygame.init()
+
+screen = pygame.display.set_mode((1000, 1000))
+
+pygame.display.set_caption("Universe Civ Sim")
+
+WindowSize = pygame.display.get_window_size()
+WindowHeight = WindowSize[0]
+print(WindowHeight)
+WindowWidth = WindowSize[1]
+
+GenerateStars(rn.randrange(config.MinStar, config.MaxStar), screen, WindowHeight, WindowWidth)
+pygame.display.flip()
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+pygame.quit
 
 print("Generating Stars")
