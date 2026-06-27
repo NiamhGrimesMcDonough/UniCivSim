@@ -10,7 +10,7 @@ class Star:
         self.size = size
         self.id = ID
 
-def GenerateStars(stars_remaining, surface, WindowHeight, WindowWidth, NoOfCivs):
+def GenerateStars(stars_remaining, surface, WindowHeight, WindowWidth):
     if stars_remaining <= 0:
         print("Stars Generated!")
         return
@@ -22,10 +22,9 @@ def GenerateStars(stars_remaining, surface, WindowHeight, WindowWidth, NoOfCivs)
         x= rn.randrange(0,WindowHeight)
         y= rn.randrange(0,WindowWidth)
         xy = (x, y)
-        lifeRoll = rn.randrange(0, 100)
-        if lifeRoll <= config.CivProbability*100:
-            NoOfCivs += 1
-            civ.spawnCiv(xy, NoOfCivs)
+        lifeRoll = rn.randrange(0, 100000000000)
+        if lifeRoll <= config.ReadSetting(6):
+            civ.spawnCiv(xy)
         star = Star(colour, xy, s, stars_remaining)
         pygame.draw.circle(surface, star.colour, xy, star.size)
         stars_remaining -= 1

@@ -1,0 +1,9 @@
+Percentage stars that have planets#2
+Percentage of planets that support life#30
+Percentage of those planets that develop life#100
+Percentage of those planets that develop intelligent life#50
+Percentage of that intelligent life that produce signals#20
+Portion of the lifetime of their planet for which they produce these signals#20
+Likelihood of a technological civilization forming in a given star#120000000
+Minimum number of stars#5000
+Maximum number of stars#10000

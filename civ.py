@@ -1,8 +1,8 @@
 import pygame
 import random as rn
 alive = pygame.sprite.Group()
-def spawnCiv(xy, NoOfCivs):
-    civilization = Civ(CivColour(), xy, 10, rn.randrange(1, 999)/1000)
+def spawnCiv(xy):
+    civilization = Civ(CivColour(), xy, 10, rn.randrange(1, 99900)/100000)
     
 
     alive.add(civilization)  
