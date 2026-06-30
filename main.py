@@ -6,9 +6,8 @@ import civ
 
 
 pygame.init()
-screen = pygame.display.set_mode((1000, 1000))
-CivLayer = pygame.display.set_mode((1000, 1000))
-CivLayer.set_alpha(50)
+screen = pygame.display.set_mode((1920,1080))
+pygame.FULLSCREEN
 pygame.display.set_caption("Universe Civ Sim")
 clock = pygame.time.Clock()
 WindowSize = pygame.display.get_window_size()
@@ -24,7 +23,7 @@ while running:
     for events in pygame.event.get():
         if events.type == ADVANCE_EVENT:
             for civilization in civ.alive:
-                civilization.Advance(CivLayer)
+                civilization.Advance()
         if events.type == pygame.QUIT:
             running = False
     pygame.display.flip()
