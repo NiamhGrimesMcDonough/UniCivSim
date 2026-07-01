@@ -1,4 +1,5 @@
 
+
 # UniCivSim
 
 A simple simulation made to demonstrate how galactic civilizations may behave in an extremely simplified form.
@@ -20,5 +21,6 @@ A simple simulation made to demonstrate how galactic civilizations may behave in
 
 
 ## Installation
+*Currently only supports windows*
 
 Download Main.exe and run it.
