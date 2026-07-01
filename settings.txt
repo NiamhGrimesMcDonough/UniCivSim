@@ -7,3 +7,7 @@ Portion of the lifetime of their planet for which they produce these signals#20
 Likelihood of a technological civilization forming in a given star#6000000000
 Minimum number of stars#5000
 Maximum number of stars#10000
+Percentage Benevolent#50
+Equivalence range#20
+Desperation Growth Rate#10
+Victory Desperation Change#-500

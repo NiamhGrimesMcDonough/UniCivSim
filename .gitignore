@@ -1,1 +1,8 @@
 /__pycache__
+/.venv
+/main.build
+/main.dist
+/main.onefile.build
+/settings.txt
+/nuitka-crash-report.xml
+/main.cmd
